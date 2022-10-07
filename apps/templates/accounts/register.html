@@ -17,7 +17,7 @@
                     <div class="mb-4">
                         <i class="feather icon-user-plus auth-icon"></i>
                     </div>
-                    <h3 class="mb-4">Sign up</h3>
+                    <h3 class="mb-4">Reset</h3>
 
                     <span class="mb-0 text-muted">
                         {% if msg %}
@@ -42,32 +42,11 @@
                             {% csrf_token %}                    
 
                             <div class="input-group mb-3">
-                                {{ form.username }}
-                            </div>
-                            <span class="text-error">{{ form.username.errors }}</span>
-
-                            <div class="input-group mb-3">
                                 {{ form.email }}
                             </div>
                             <span class="text-error">{{ form.email.errors }}</span>
-
-                            <div class="input-group mb-4">
-                                {{ form.password1 }}
-                            </div>
-                            <span class="text-error">{{ form.password1.errors }}</span>
-
-                            <div class="input-group mb-4">
-                                {{ form.password2 }}
-                            </div>
-                            <span class="text-error">{{ form.password2.errors }}</span>
                             
-                            <div class="form-group text-left">
-                                <div class="checkbox checkbox-fill d-inline">
-                                    <input type="checkbox" name="checkbox-fill-1" id="checkbox-fill-a1" checked="">
-                                    <label for="checkbox-fill-a1" class="cr"> Agree with <a href="#">terms</a></label>
-                                </div>
-                            </div>
-                            <button type="submit" name="register" class="btn btn-primary shadow-2 mb-4">Register</button>
+                            <button type="submit" name="reset" class="btn btn-primary shadow-2 mb-4">Submit</button>
 
                         </form>
 
@@ -77,8 +56,8 @@
                     
                     <br />
                     <p class="mb-2 text-muted">
-                        &copy; <a target="_blank" href="https://bit.ly/37fF9RT">CodedThemes</a> 
-                        - <a target="_blank" href="https://appseed.us/datta-able/product/django/">Django Datta Able</a>
+                        &copy; <a target="_blank" href="https://bit.ly/37fF9RT">Copyright 2022 -2023</a> 
+                        - <a target="_blank" href="https://appseed.us/datta-able/product/django/">GFIS Innovative Solutions</a>
                     </p>
                 </div>
             </div>
